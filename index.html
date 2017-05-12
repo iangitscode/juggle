@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>
+Soccer
+</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<script src="main.js"></script>
+</head>
+<body onload="init()">
+	<div id="button" onclick="instructions()"> How-To </div>
+	<div id="descBox">
+		<span style="position:absolute;width:100%;text-align:left;">EASIER</span>
+		<span style="position:absolute;width:100%;text-align:right;">HARDER</span><br>
+		<input id="slider" type="range" min="1" max="10" value="5"/>
+	</div>
+	<br>
+
+		<div class="text">
+			High Score:
+			<div id="highscore">0</div>
+			<br>
+			Current Score:
+			<div id="score">0</div>
+		</div>
+	<img id="ball" src="ball.png" onclick="clicked(event)" draggable="false">
+</body>
+</html>

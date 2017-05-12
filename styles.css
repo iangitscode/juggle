@@ -1,0 +1,100 @@
+html{
+	overflow:hidden;
+}
+
+body{ 
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	background-color:#f7f5ef;    
+}
+
+.text{
+	font-size:300%;
+	font-family:"Courier New";
+	opacity:0.3;
+	text-align:center;
+	padding-top:10%;
+}
+
+.over{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	animation-name:appear;
+	animation-duration:1.3s;
+	background-color:#000000;
+	opacity:0.95;
+	color:white;
+	z-index:0;
+}
+
+#button{
+	font-size:65px;
+	font-family:"Alfa Slab One";
+	border-color:#95b0db;
+	border-style:solid;
+	display:inline-block;
+	color:#95b0db;
+	padding-left:15px;
+	padding-right:15px;
+}
+	
+#ball{
+	height:0px;
+	width:0px;
+	left:0px;
+	top:0px;
+	position:absolute;
+	-webkit-transform:rotate(0deg);
+	transform(0deg);
+}
+
+#descBox{
+	z-index:3;
+	margin-top:25%;
+	margin-left:15%;
+	position:absolute;
+	width:70%;
+	color:white;
+	display:none;
+	font-family:"Courier New";
+	font-size:30px;
+}
+
+#slider[type=range]{
+	-webkit-appearance:none;
+	width:100%;
+	margin-top:10px;
+	height:30px;
+	border-radius:10px;
+	z-index:2;
+	display:none;
+}
+
+#slider[type=range]::-webkit-slider-runnable-track { 
+	background:#e1e6ef;
+	border:none;
+	border-radius:10px;
+}
+
+#slider[type=range]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	box-shadow: 1px 1px 1px #000000;
+	border:none;
+	height:80px;
+	width:40px;
+	background:#6d9ce8;
+	border-radius:5px;
+	margin-top:-15px;
+}
+
+@keyframes appear{
+	from {opacity:0;}
+	to {opacity:0.95;}
+}
